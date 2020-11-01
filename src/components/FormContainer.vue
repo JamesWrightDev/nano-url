@@ -1,10 +1,8 @@
 <template>
-  <div class="contianer mx-auto w-3/12 py-10">
-    <form v-on:submit.prevent="shorternUrl">
-      <TextInput placeholder="Enter a URL to shortnern" v-model="urlInput"></TextInput>
-      <Button @click.native="shorternUrl" label="Shortern"></Button>
+    <form v-on:submit.prevent="shorternUrl" class="w-full mx-auto">
+      <TextInput placeholder="Enter a URL to shortnern" v-model="urlInput"/>
+      <Button @click.native="shorternUrl" label="Shortern"/>
     </form>
-  </div>
 </template>
 
 <script>
@@ -14,10 +12,10 @@ import Button from './Button';
 import TextInput from './TextInput'
 
 export default {
-  name: "HelloWorld",
+  name: "FormContainer",
   components: {
     Button,
-    TextInput
+    TextInput,
   },
   data() {
     return {
