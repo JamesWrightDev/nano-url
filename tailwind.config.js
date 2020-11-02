@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        'enterExit': 'enterExit 1s ease',
+        'enterExit': 'enterExit 0.3s ease',
       },
       keyframes:{
         enterExit: {
